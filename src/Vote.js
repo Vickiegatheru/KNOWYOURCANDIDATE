@@ -1,0 +1,86 @@
+import personImage from './assets/person.png';
+import BallotImage from './assets/ballot.webp';  
+import FlagImage from './assets/flag.png';
+
+const Vote = () => {
+  return (
+    <div className="Vote"> 
+      <div className="RowOne">
+        <div className="column">
+         <p>
+          ____ KNOW BEFORE YOU VOTE
+
+       </p> 
+          <h3>Who's running to represent you?</h3> <p>
+            Every election is more than a ballot – it's a choice about your everyday life. 
+            This platform makes it easier to discover who's running in your area and what they believe in.
+          </p>
+          <p>
+            From MP to Governor to President – get a clear, structured view of every hopeful leader. 
+            No noise, no hype. Just facts.
+          </p> 
+             <a href="/andidates" className="plain-link">View andidates</a>
+
+        </div>
+        <div className="column">
+            <img src={personImage} alt="Candidate" className="candidate-image" />
+
+        </div>
+      </div>
+
+      {/* New RowTwo */}
+      <div className="RowTwo">
+        <div className="column">
+                      <img src={BallotImage} alt="Ballot" className="ballot-image" />
+
+        </div>
+        <div className="column"> 
+          <p>
+          ____ CIVIC EDUCATION 
+
+       </p> 
+          <h3>Understand the power of your vote </h3> 
+          <p>
+            Voting is the cornerstone of democracy. It’s how citizens influence government decisions,
+            policies, and leadership at all levels.
+          </p>
+          <p>
+            Staying informed helps you make powerful, responsible choices—and ensures your voice 
+            contributes to the future you want to see.
+          </p>
+             <a href="/Voting" className="plain-link">How Voting Works</a>
+
+        </div>
+      </div> 
+      <div className="RowThree">
+        <div className="column">
+
+          <p>
+          ____ WANASEMA, WANAFANYA!
+
+       </p> 
+          <h3>Trak their proises and know the truth</h3>
+          <p>
+            Research candidates' backgrounds, read their manifestos, attend debates,
+            and use reliable platforms to compare positions.
+          </p>
+          <p>
+            Understanding what each candidate stands for helps you cast a vote that aligns with your values and priorities.
+          </p>              <a href="/promises" className="plain-link">Track promises</a>
+  
+        </div>
+        <div className="column">
+                      <img src={FlagImage} alt="Flag" className="flag-image" />
+
+
+
+        </div>             
+
+
+      </div>
+
+    </div>
+  );
+};
+
+export default Vote;

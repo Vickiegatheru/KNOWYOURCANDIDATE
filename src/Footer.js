@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="column1">
 
         <h3>
-KNOW YOUR CANDIDATE       </h3> 
+KNOWYOURCANDIDATE       </h3> 
         
          <p>
         This platform doesn't endorse anyone   
@@ -15,10 +15,11 @@ KNOW YOUR CANDIDATE       </h3>
           It just gives you receipts 
         </p> 
 
-        <p >
+        <h4 >
           copyright 2025 KNOWYOURCANDIDATE,          
-        </p>
-        <p>All Rights Reserved</p>
+      
+      
+        All Rights Reserved</h4>
 
       </div>
       <div className="column2">
@@ -26,7 +27,7 @@ KNOW YOUR CANDIDATE       </h3>
              <a href="/more" className="more">more on us</a>
 
              <p>
-Want to add a candidate?       </p>
+      Want to add a candidate?       </p>
         </p>  
 <p>
           Report missing data?

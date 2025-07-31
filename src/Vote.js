@@ -7,10 +7,11 @@ const Vote = () => {
     <div className="Vote"> 
       <div className="RowOne">
         <div className="column">
-         <p>
-          ____ KNOW BEFORE YOU VOTE
+          <div className="civic-education">
+      <span className="inline-line"></span>
+    KNOW BEFORE YOU VOTE
 
-       </p> 
+    </div>
           <h3>Who's running to represent you?</h3> <p>
             Every election is more than a ballot – it's a choice about your everyday life. 
             This platform makes it easier to discover who's running in your area and what they believe in.
@@ -19,7 +20,7 @@ const Vote = () => {
             From MP to Governor to President – get a clear, structured view of every hopeful leader. 
             No noise, no hype. Just facts.
           </p> 
-             <a href="/andidates" className="plain-link">View andidates</a>
+             <a href="/andidates" className="plain-link">View candidates &rarr; </a>
 
         </div>
         <div className="column">
@@ -35,10 +36,10 @@ const Vote = () => {
 
         </div>
         <div className="column"> 
-          <p>
-          ____ CIVIC EDUCATION 
-
-       </p> 
+          <div className="civic-education">
+                <span className="inline-line"></span>
+ CIVIC EDUCATION
+    </div>
           <h3>Understand the power of your vote </h3> 
           <p>
             Voting is the cornerstone of democracy. It’s how citizens influence government decisions,
@@ -48,25 +49,26 @@ const Vote = () => {
             Staying informed helps you make powerful, responsible choices—and ensures your voice 
             contributes to the future you want to see.
           </p>
-             <a href="/Voting" className="plain-link">How Voting Works</a>
+             <a href="/Voting" className="plain-link">How Voting Works &rarr; </a>
 
         </div>
       </div> 
       <div className="RowThree">
         <div className="column">
 
-          <p>
-          ____ WANASEMA, WANAFANYA!
+          <div className="civic-education">
+                <span className="inline-line"></span>
+                  WANASEMA, WANAFANYA!
+          </div>
 
-       </p> 
-          <h3>Trak their proises and know the truth</h3>
+          <h3>Track their promises and know the truth</h3>
           <p>
             Research candidates' backgrounds, read their manifestos, attend debates,
             and use reliable platforms to compare positions.
           </p>
           <p>
             Understanding what each candidate stands for helps you cast a vote that aligns with your values and priorities.
-          </p>              <a href="/promises" className="plain-link">Track promises</a>
+          </p>              <a href="/promises" className="plain-link">Track promises &rarr; </a>
   
         </div>
         <div className="column">

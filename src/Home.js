@@ -16,7 +16,10 @@ const HomePage = () => {
   </nav>
 
   <div className="Home">
-    <h2>______ VOTE CLEARLY. BOLDLY. WITH INSTINCT</h2>   
+    <h2 className="header-with-line">
+      <span className="inline-line"></span>
+      VOTE CLEARLY. BOLDLY. WITH INSTINCT
+    </h2> 
     <p>Discover your candidates. Track Promises. Understand your Government.</p>
   </div>
 </div>

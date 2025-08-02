@@ -307,4 +307,41 @@ font-weight: bold;
   background-color: #a5bc15; /* Line color */
   margin-right: 10px;      /* Space between line and text */
 }
+/* Candidate.css */
+
+.Candidate {   background-color: #0b2537;
+
+  
+}
+.CandidatePage {   
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; 
+  padding: 2rem;
+}
+ .CandidatePage  h2 {
+  font-size: 1.2rem;
+  color: #a5bc15;
+  margin-bottom: 0px;
+      margin-top: -100px; 
+
+}
+.CandidatePage h3 {
+  font-size: 2.5rem;
+  color: #f8f8f8;
+  max-width: 600px;
+}
+.CandidatePage p {
+  font-size: 1.6rem;
+  color: #f8f8f8;
+  max-width: 850px; 
+  font-weight: 550; 
+  margin-bottom: 0px;
+
+}
+
 

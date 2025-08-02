@@ -11,9 +11,9 @@ const LearnToVote = () => {
 
       <h2 className="header-with-line2">
       <span className="inline-linea"></span>
-CIVIC EDUCATION                </h2> 
+        CIVIC EDUCATION                </h2> 
 
-       <h3>        How Voting works in Kenya </h3>  
+       <h3>        How Voting works in Kenya. </h3>  
 
        <p>A step by step guide to partiipating in Kenya's Deorati proess</p>
        

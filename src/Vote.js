@@ -20,7 +20,7 @@ const Vote = () => {
             From MP to Governor to President – get a clear, structured view of every hopeful leader. 
             No noise, no hype. Just facts.
           </p> 
-             <a href="/andidates" className="plain-link">View candidates &rarr; </a>
+             <a href="/Candidate" className="plain-link">View candidates &rarr; </a>
 
         </div>
         <div className="column">
@@ -49,7 +49,7 @@ const Vote = () => {
             Staying informed helps you make powerful, responsible choices—and ensures your voice 
             contributes to the future you want to see.
           </p>
-             <a href="/Voting" className="plain-link">How Voting Works &rarr; </a>
+             <a href="/LearnToVote" className="plain-link">How Voting Works &rarr; </a>
 
         </div>
       </div> 

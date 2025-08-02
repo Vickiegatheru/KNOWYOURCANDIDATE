@@ -297,7 +297,6 @@ font-weight: bold;
   align-items: center;
   font-size: 24px;
   font-weight: bold;
-  color: #222;
 }
 
 .inline-line {
@@ -320,20 +319,20 @@ font-weight: bold;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh; 
   padding: 2rem;
 }
  .CandidatePage  h2 {
   font-size: 1.2rem;
   color: #a5bc15;
   margin-bottom: 0px;
-      margin-top: -100px; 
+      margin-top: 100px; 
 
 }
 .CandidatePage h3 {
   font-size: 2.5rem;
   color: #f8f8f8;
-  max-width: 600px;
+  max-width: 600px;   
+
 }
 .CandidatePage p {
   font-size: 1.6rem;
@@ -344,4 +343,50 @@ font-weight: bold;
 
 }
 
+.button-group {
+  margin-top: 8rem;
+}
 
+.primary-btn,
+.secondary-btn {
+  padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;  border: 2px solid white; /* Creates the outline */
+   color: white; 
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 50px;
+text-decoration: none;
+}
+
+.column-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.columnL {
+  margin-top: 50px;
+  flex: 1;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white; border: 1px solid white; /* Creates the outline */
+}
+.header-with-line2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ⬅️ This ensures left alignment */
+  font-size: 24px;
+  font-weight: bold;
+  gap: 300px;
+}
+
+.inline-linea {
+  display: inline-block;
+  width: 130px;             /* Length of the line */
+  height: 2px;             /* Thickness of the line */
+  background-color: #a5bc15; /* Line color */
+  margin-left: -350px;  
+}

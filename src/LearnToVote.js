@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 
 
-const Candidate = () => {
+const LearnToVote = () => {
     return ( 
 
     <div className="Candidate">    
@@ -11,30 +11,14 @@ const Candidate = () => {
 
       <h2 className="header-with-line2">
       <span className="inline-linea"></span>
-                KNOW BEFORE YOU VOTE   
-                </h2> 
+CIVIC EDUCATION                </h2> 
 
-       <h3>        Who's running to represent you? </h3>  
+       <h3>        How Voting works in Kenya </h3>  
 
-       <p>Your vote begins with knowing the people who seek to lead</p>
+       <p>A step by step guide to partiipating in Kenya's Deorati proess</p>
        
-              <p>This space lets you see beyond posters and 
-                slogans-into real profiles, promises and past actions</p>
-
-<div className="button-group">
-        <Link to="/vote" className="primary-btn">Searh andidate</Link>
-        <Link to="/" className="secondary-btn">All</Link>
-
-<Link to="/vote" className="primary-btn">President</Link>
-  <Link to="/" className="secondary-btn">Goernor</Link>
-
-<Link to="/vote" className="primary-btn">Senator</Link>
-  <Link to="/" className="secondary-btn">P</Link>
-
-
-<Link to="/vote" className="primary-btn">Woenn Rep</Link>
-<Link to="/vote" className="primary-btn">a</Link>
-      </div>  
+              
+        
 
 <div className="column-container">
   <div className="columnL">
@@ -70,9 +54,9 @@ const Candidate = () => {
 </div>
       </div>
 
-           </div>
+      </div>  
 
      );
 }
  
-export default Candidate;
+export default LearnToVote;

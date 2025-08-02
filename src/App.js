@@ -7,6 +7,7 @@ import Candidate from './Candidate';
 import Contact from './Contact';
 import HomePage from './Home';
 import Footer from './Footer';
+import LearnToVote from "./LearnToVote";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/vote" element={<Vote />} />
           <Route path="/Candidate" element={<Candidate />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/LearnToVote" element={<LearnToVote />} />
+
         </Routes>      
          <Footer />
 

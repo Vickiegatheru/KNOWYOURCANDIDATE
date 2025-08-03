@@ -1,4 +1,3 @@
-// src/App.js
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import LandingPage from './LandingPage';
@@ -11,14 +10,14 @@ import LearnToVote from "./LearnToVote";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/KNOWYOURCANDIDATE">
       <div className="App">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/vote" element={<Vote />} />
-          <Route path="/Candidate" element={<Candidate />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/LearnToVote" element={<LearnToVote />} />
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/Vote" element={<Vote/>} />
+          <Route path="/Candidate" element={<Candidate/>} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/LearnToVote" element={<LearnToVote/>} />
 
         </Routes>      
          <Footer />

@@ -22,18 +22,18 @@ const Candidate = () => {
                 slogans-into real profiles, promises and past actions</p>
 
 <div className="button-group">
-        <Link to="/vote" className="primary-btn">Searh andidate</Link>
+        <Link to="/vote" className="primary-btn">Search Candidate</Link>
         <Link to="/" className="secondary-btn">All</Link>
 
 <Link to="/vote" className="primary-btn">President</Link>
-  <Link to="/" className="secondary-btn">Goernor</Link>
+  <Link to="/" className="secondary-btn">Governor</Link>
 
 <Link to="/vote" className="primary-btn">Senator</Link>
-  <Link to="/" className="secondary-btn">P</Link>
+  <Link to="/" className="secondary-btn">MP</Link>
 
 
-<Link to="/vote" className="primary-btn">Woenn Rep</Link>
-<Link to="/vote" className="primary-btn">a</Link>
+<Link to="/vote" className="primary-btn">Women Rep</Link>
+<Link to="/vote" className="primary-btn">MCA</Link>
       </div>  
 
 <div className="column-container">

@@ -1,78 +1,65 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 
-
 const Candidate = () => {
-    return ( 
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
-    <div className="Candidate">    
-          <Navbar/>
-    <div className="CandidatePage">    
+  return (
+    <div className="Candidate">
+      <Navbar />
 
-      <h2 className="header-with-line2">
-      <span className="inline-linea"></span>
-                KNOW BEFORE YOU VOTE   
-                </h2> 
+      <div className="CandidatePage">
 
-       <h3>        Who's running to represent you? </h3>  
+        <h2 className="header-with-line2" data-aos="fade-down">
+          <span className="inline-linea"></span>
+          KNOW BEFORE YOU VOTE
+        </h2>
 
-       <p>Your vote begins with knowing the people who seek to lead</p>
-       
-              <p>This space lets you see beyond posters and 
-                slogans-into real profiles, promises and past actions</p>
+        <h3 data-aos="fade-right">Who's running to represent you?</h3>
 
-<div className="button-group">
-        <Link to="/vote" className="primary-btn">Search Candidate</Link>
-        <Link to="/" className="secondary-btn">All</Link>
+        <p data-aos="fade-left">
+          Your vote begins with knowing the people who seek to lead
+        </p>
+        <p data-aos="fade-left" data-aos-delay="100">
+          This space lets you see beyond posters and slogans—into real profiles, promises and past actions
+        </p>
 
-<Link to="/vote" className="primary-btn">President</Link>
-  <Link to="/" className="secondary-btn">Governor</Link>
+        <div className="button-group" data-aos="zoom-in-up">
+          <Link to="/vote" className="primary-btn">Search Candidate</Link>
+          <Link to="/" className="secondary-btn">All</Link>
 
-<Link to="/vote" className="primary-btn">Senator</Link>
-  <Link to="/" className="secondary-btn">MP</Link>
+          <Link to="/vote" className="primary-btn">President</Link>
+          <Link to="/" className="secondary-btn">Governor</Link>
 
+          <Link to="/vote" className="primary-btn">Senator</Link>
+          <Link to="/" className="secondary-btn">MP</Link>
 
-<Link to="/vote" className="primary-btn">Women Rep</Link>
-<Link to="/vote" className="primary-btn">MCA</Link>
-      </div>  
+          <Link to="/vote" className="primary-btn">Women Rep</Link>
+          <Link to="/vote" className="primary-btn">MCA</Link>
+        </div>
 
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
+        {[...Array(3)].map((_, i) => (
+          <div className="column-container" key={i} data-aos="fade-up" data-aos-delay={i * 100}>
+            <div className="columnL" data-aos="zoom-in" data-aos-delay={i * 100 + 100}>
+              <h3>Column 1</h3>
+              <p>William S. Ruto</p>
+            </div>
+            <div className="columnL" data-aos="zoom-in" data-aos-delay={i * 100 + 200}>
+              <h3>Column 2</h3>
+              <p>William S. Ruto</p>
+            </div>
+          </div>
+        ))}
 
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
-
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
       </div>
+    </div>
+  );
+};
 
-           </div>
-
-     );
-}
- 
 export default Candidate;

@@ -7,6 +7,7 @@ import Contact from './Contact';
 import HomePage from './Home';
 import Footer from './Footer';
 import LearnToVote from "./LearnToVote";
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (

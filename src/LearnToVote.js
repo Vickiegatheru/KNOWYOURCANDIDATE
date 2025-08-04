@@ -1,62 +1,60 @@
-import Navbar from "./Navbar";
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+import Navbar from "./Navbar";
 
 const LearnToVote = () => {
-    return ( 
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
-    <div className="Candidate">    
-          <Navbar/>
-    <div className="CandidatePage">    
+  return (
+    <div className="Candidate">
+      <Navbar />
 
-      <h2 className="header-with-line2">
-      <span className="inline-linea"></span>
-        CIVIC EDUCATION                </h2> 
+      <div className="CandidatePage">
+        <h2 className="header-with-line2" data-aos="fade-down">
+          <span className="inline-linea"></span>
+          CIVIC EDUCATION
+        </h2>
 
-       <h3>        How Voting works in Kenya. </h3>  
+        <h3 data-aos="fade-right">How Voting works in Kenya.</h3>
+        <p data-aos="fade-left">
+          A step-by-step guide to participating in Kenya's democratic process
+        </p>
 
-       <p>A step by step guide to partiipating in Kenya's Deorati proess</p>
-       
-              
-        
+        {[...Array(3)].map((_, i) => (
+          <div
+            className="column-container"
+            key={i}
+            data-aos="fade-up"
+            data-aos-delay={i * 200}
+          >
+            <div className="columnL" data-aos="flip-left" data-aos-delay="100">
+              <img
+                src="/ruto.jpg"
+                alt="Candidate"
+                className="candidate-img"
+              />
+              <h3>Column 1</h3>
+              <p>William S. Ruto</p>
+            </div>
 
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
-
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
-
-<div className="column-container">
-  <div className="columnL">
-    <h3>Column 1</h3>
-    <p>William S. Ruto</p>
-  </div>
-  <div className="columnL">
-    <h3>Column 2</h3>
-    <p>     William S. Ruto</p>
-  </div>
-</div>
+            <div className="columnL" data-aos="flip-right" data-aos-delay="200">
+              <img
+                src="/ruto.jpg"
+                alt="Candidate"
+                className="candidate-img"
+              />
+              <h3>Column 2</h3>
+              <p>William S. Ruto</p>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
+  );
+};
 
-      </div>  
-
-     );
-}
- 
 export default LearnToVote;

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/KNOWYOURCANDIDATE/static/css/main.503d39d0.css",
-    "main.js": "/KNOWYOURCANDIDATE/static/js/main.fd1145d6.js",
+    "main.css": "/KNOWYOURCANDIDATE/static/css/main.8be71205.css",
+    "main.js": "/KNOWYOURCANDIDATE/static/js/main.0ba16465.js",
     "static/media/footer.jpg": "/KNOWYOURCANDIDATE/static/media/footer.7ac36ca8bff9b3e5e943.jpg",
     "static/media/fist.jpg": "/KNOWYOURCANDIDATE/static/media/fist.a4026ca1a8e49234f11d.jpg",
     "static/media/ballot.webp": "/KNOWYOURCANDIDATE/static/media/ballot.c53bbb74f7791c7e0abe.webp",
     "index.html": "/KNOWYOURCANDIDATE/index.html",
-    "main.503d39d0.css.map": "/KNOWYOURCANDIDATE/static/css/main.503d39d0.css.map",
-    "main.fd1145d6.js.map": "/KNOWYOURCANDIDATE/static/js/main.fd1145d6.js.map"
+    "main.8be71205.css.map": "/KNOWYOURCANDIDATE/static/css/main.8be71205.css.map",
+    "main.0ba16465.js.map": "/KNOWYOURCANDIDATE/static/js/main.0ba16465.js.map"
   },
   "entrypoints": [
-    "static/css/main.503d39d0.css",
-    "static/js/main.fd1145d6.js"
+    "static/css/main.8be71205.css",
+    "static/js/main.0ba16465.js"
   ]
 }

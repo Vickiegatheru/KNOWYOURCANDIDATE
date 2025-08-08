@@ -854,15 +854,15 @@ font-weight: bold;
 
 .navbar h1 {
   margin: 0;
-  font-size: 18px;
+  font-size: 22px;
   color: #f8f8f8;
 }
 
 .navbar .links {
   display: flex;
   gap: 0px;
-    font-size: 10px;
-
+    font-size: 14px;
+margin-bottom: 0%;
 }
 
 .navbar .links a {
@@ -1218,7 +1218,6 @@ font-weight: bold;
   font-size: 2.5rem;
   color: #f8f8f8;
   max-width: 600px;
-  margin-bottom: -50%;
 }
 
 
@@ -1237,5 +1236,11 @@ font-weight: bold;
   font-weight: bold;
   gap: 0px;
 }
+.Home h2 {
+  font-size: 1.1rem;
+  color: #a5bc15;
+  margin-bottom: 100px;
+      margin-top: -100px; 
 
+}
 }

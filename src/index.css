@@ -781,3 +781,99 @@ font-weight: bold;
   margin-bottom: 1rem;
   object-fit: cover;
 }
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Footer {
+  /* ... existing styles ... */
+  animation: slideUpFade 1s ease-out forwards;
+  opacity: 0; /* needed to trigger the fade */
+  transform: translateY(30px); /* start position for animation */
+}
+
+
+
+@keyframes slideDownFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+
+
+.navbar {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDownFade 0.8s ease-out forwards;
+}
+
+@keyframes slideDownFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar .links a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar .links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transition: width 0.3s ease;
+}
+
+.navbar .links a:hover::after {
+  width: 100%;
+}
+
+.navbar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #f8f8f8;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 0px;
+    font-size: 10px;
+
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar .links a:hover {
+  color: #004499;
+} 
+
+}

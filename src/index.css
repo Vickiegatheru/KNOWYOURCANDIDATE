@@ -507,6 +507,11 @@ li {
 
 
 @media (max-width: 768px) {
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
 
 
 .navbar {
@@ -871,7 +876,6 @@ font-weight: bold;
 
 }
 
-/* Hover underline animation */
 .more {
   position: relative;
   color: #a5bc15;

@@ -1015,9 +1015,28 @@ font-size: large;
     width:100px;
     opacity: 1;
   }
+
+
+
+
+
+
+
+
 }
 .header-with-line2 {
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Ensures left alignment */
+}
+.column-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .column-container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
 }

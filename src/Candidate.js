@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 import rutoImage from './assets/ruto.jpg';
 import karuaImage from './assets/karua.jpg'; 
-
 import gachaguaImage from './assets/gachagua.jpg';
 import matiangiImage from './assets/matiangi.jpg';
 import maragaImage from './assets/maraga.jpg';
-
-
-
-
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,14 +15,13 @@ const Candidate = () => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  // Candidate data
   const candidates = [
     { 
       title: "Presidential Candidate", 
       name: "William S. Ruto", 
       image: rutoImage,
       age: 58,
-      position : "President of the Republic of Kenya ",
+      position : "President of the Republic of Kenya",
     },
     { 
       title: "Presidential Candidate", 
@@ -52,26 +46,19 @@ const Candidate = () => {
     },
     { 
       title: "Presidential Candidate", 
-      name: "David Maraga ", 
+      name: "David Maraga", 
       image: maragaImage,
       age: 42,
       position: "Former Chief Justice"
     },
     { 
-      title: "Presidential Candidate ", 
+      title: "Presidential Candidate", 
       name: "", 
       image: maragaImage,
       age: 35,
       position: ""
     }
   ];
-
-  const chunkArray = (arr, size) =>
-    Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
-      arr.slice(i * size, i * size + size)
-    );
-
-  const candidateRows = chunkArray(candidates, 2);
 
   return (
     <div className="Candidate">
@@ -103,29 +90,22 @@ const Candidate = () => {
           <Link to="/vote" className="primary-btn">MCA</Link>
         </div>
 
-        {candidateRows.map((row, rowIndex) => (
-          <div
-            className="column-container"
-            key={rowIndex}
-            data-aos="fade-up"
-            data-aos-delay={rowIndex * 200}
-          >
-            {row.map((candidate, colIndex) => (
-              <div
-                className="columnL"
-                key={colIndex}
-                data-aos="zoom-in"
-                data-aos-delay={(rowIndex * 2 + colIndex) * 100}
-              >
-                <img src={candidate.image} alt={candidate.title} className="flag-image" />
-                <h3>{candidate.title}</h3>
-                <p><strong>Name:</strong> {candidate.name}</p>
-                <p><strong>Age:</strong> {candidate.age}</p>
-                <p><strong>Position:</strong> {candidate.position}</p>
-              </div>
-            ))}
-          </div>
-        ))}
+        <div className="column-container">
+          {candidates.map((candidate, index) => (
+            <div
+              className="columnL"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+            >
+              <img src={candidate.image} alt={candidate.title} className="flag-image" />
+              <h3>{candidate.title}</h3>
+              <p><strong>Name:</strong> {candidate.name}</p>
+              <p><strong>Age:</strong> {candidate.age}</p>
+              <p><strong>Position:</strong> {candidate.position}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

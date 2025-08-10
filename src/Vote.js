@@ -7,6 +7,7 @@ import personImage from './assets/person.png';
 import BallotImage from './assets/ballot.webp';
 import FlagImage from './assets/flag.png';
 import Candidate from './Candidate';
+import LearnToVote from './LearnToVote';
 
 const Vote = () => {
   useEffect(() => {

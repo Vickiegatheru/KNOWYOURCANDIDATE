@@ -4,6 +4,7 @@ import karuaImage from './assets/karua.jpg';
 
 import gachaguaImage from './assets/gachagua.jpg';
 import matiangiImage from './assets/matiangi.jpg';
+import maragaImage from './assets/maraga.jpg';
 
 
 
@@ -51,17 +52,17 @@ const Candidate = () => {
     },
     { 
       title: "Presidential Candidate", 
-      name: "Mary Johnson", 
-      image: rutoImage,
+      name: "David Maraga ", 
+      image: maragaImage,
       age: 42,
       position: "Former Chief Justice"
     },
     { 
-      title: "President", 
-      name: "Peter Mwangi", 
-      image: rutoImage,
+      title: "Presidential Candidate ", 
+      name: "", 
+      image: maragaImage,
       age: 35,
-      position: "MCA for Ruiru Ward"
+      position: ""
     }
   ];
 
